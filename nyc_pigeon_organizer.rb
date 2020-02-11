@@ -8,7 +8,7 @@ data.each do |colors_genders_lives,values|
       if hash[name] == nil 
         hash[name] = {}
       end 
-      binding.pry 
+    
       if hash[name][colors_genders_lives] == nil 
         hash[name][colors_genders_lives] = []
       end 
