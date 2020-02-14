@@ -1,6 +1,6 @@
 def nyc_pigeon_organizer(data)
   pigeons = {}
-  
+
   #
   # I prefer using do/end here and breaking these up
   # into multiple lines for visual purposes
