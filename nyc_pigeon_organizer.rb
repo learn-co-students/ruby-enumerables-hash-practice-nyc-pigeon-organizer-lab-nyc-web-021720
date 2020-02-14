@@ -1,15 +1,13 @@
-def nyc_pigeon_organizer(data)
-  new_hash = {}
-
-  data.each do |keys, values|
-    values.each do |k, v|
-      v.each do |name|
-        new_hash[name] ||= {}
-        new_hash[name][keys] ||= []
-        new_hash[name][keys].push(k.to_s)
+def nyc_pigeon_organizer(pigeon_data)
+  new = {}
+  pigeon_data.each do |key, value|
+    value.each do |k,v|
+      v.each do |names|
+        new[names] ||= {}
+        new[names][key] ||= []
+        new[names][key].push(k.to_s)
       end
-    end 
-  end
-
- new_hash
+    end
+ end
+ new
 end
