@@ -20,6 +20,12 @@ You are helping a research group study pigeons in New York City. You are given
 the following collected data on New York City pigeons in the form of a hash:
 
 ```ruby
+pigeon_list = {
+  "Theo" => {
+    :color => ["purple", "grey"],
+    :gender => ["male"],
+    :lives => ["Subway"]
+  },
 pigeon_data = {
   :color => {
     :purple => ["Theo", "Peter Jr.", "Lucky"],
